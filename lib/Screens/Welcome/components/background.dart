@@ -12,7 +12,7 @@ class Background extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      height: size.height * 0.65,
+      height: size.height,
       width: double.infinity,
       child: Stack(
         alignment: Alignment.center,
@@ -25,9 +25,9 @@ class Background extends StatelessWidget {
           ),
           Positioned(
             bottom: 0,
-            left: 0,
+            right: 0,
             child: Image.asset(
-              "assets/images/main_bottom.png",
+              "assets/images/login_bottom.png",
               width: size.width * 0.3,
             ),
           ),
